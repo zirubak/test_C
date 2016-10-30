@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 typedef struct _node {
-	char a;
+	char data;
 	struct _node *next;	
 }node;
 
@@ -16,8 +16,7 @@ void init(void) {
 	end = malloc(sizeof(node));
 
 	//connect head to tail
-	end->next = head->next;
-
+	head->next = end;
 
 }
 
